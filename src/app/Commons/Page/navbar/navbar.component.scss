@@ -1,0 +1,126 @@
+.nav-collapse-js {
+  background-color: rgba($color: #434b4d, $alpha: 0.4);
+  text-align: center;
+  color: #fff !important;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  margin: -2px;
+  backdrop-filter: brightness(50%);
+}
+
+.nav-collapse-js .nav-link {
+  color: #fff !important;
+}
+
+.shadows {
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navpropia {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6vh;
+  font-family: "OswalMedium", sans-serif;
+  font-size: 2.2vh;
+  background-color: rgba($color: #434b4d, $alpha: 0.4);
+  z-index: 3;
+  backdrop-filter: blur(10px);
+}
+
+.textnav,
+.textnav1 {
+  font-family: "OswalMedium", sans-serif;
+  font-size: 2.2vh;
+  color: #ffffff !important;
+  transition: 0.2s;
+}
+
+.text-title span {
+  color: #ffffff !important;
+  text-shadow: 0 0 15px #fff;
+}
+
+.textnav span {
+  font-family: "OswalMedium", sans-serif;
+  font-size: 2.2vh;
+  color: #ffffff !important;
+}
+
+.text-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.text-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: aliceblue;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+  text-shadow: 0 0 15px #fff;
+}
+
+.text-animation:hover:after,
+.text-animation:focus:after,
+.text-animation:active:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: aliceblue !important;
+  text-shadow: 0 0 15px #fff;
+}
+
+.textnav1 span {
+  font-family: "OswalMedium", sans-serif;
+  font-size: 2.2vh;
+  color: #ffffff !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.textnav1 span:hover,
+.textnav1 span:focus,
+.textnav1 span:active {
+  color: aliceblue !important;
+  text-shadow: 0 0 15px #fff;
+
+
+}
+
+.navpropia img {
+  height: 5.5vh;
+  padding: 0px;
+  margin: 0;
+  margin-left: 4.16vw;
+  color: #ffffff !important;
+
+}
+
+.navitems {
+  position: absolute;
+  right: 4.16vw;
+}
+
+
+.color-toggler {
+  border-color: #ffffff !important;
+}
+
+@media only screen and (max-width: 768px){
+
+  .navpropia {
+      height: 10vh;
+  }
+
+
+}

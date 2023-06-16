@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+@keyframes ligth {
+  0%   {  box-shadow: 0 0 .3rem #fff,
+    0 0 .3rem #fff,
+    0 0 3rem #fff,
+    0 0 1.2rem #fff,
+    0 0 1.2rem #fff,
+    inset 0 0 1.3rem #fff;}
+
+  50%  {  box-shadow: 0 0 .3rem #fff,
+    0 0 .3rem #fff,
+    0 0 3rem #fff,
+    0 0 1.2rem #fff,
+    0 0 1.2rem #fff,
+    inset 0 0 1.3rem #fff;}
+
+    100%   {  box-shadow: 0 0 .3rem #fff,
+      0 0 .3rem #fff,
+      0 0 3rem #fff,
+      0 0 1.2rem #fff,
+      0 0 1.2rem #fff,
+      inset 0 0 1.3rem #fff;}
+}
+
+video{
+  width: 95%;
+  transition: 0.25s ease-out ;
+}
+
+video:hover{
+  width: 100%;
+  transition: 0.25s ease-out ;
+  animation: ligth 3s infinite;
+}
+.div-video {
+  padding: 0;
+
+  aspect-ratio: 16 / 9;
+  padding: 0;
+}
+
+.row-principal{
+  padding: 5vw;
+  background-image:
+  linear-gradient(to bottom, rgba(26, 26, 26, 0.75), rgba(43, 43, 43, 0.95)),
+  url("/assets/img/bg-stars.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+h1{
+  font-size: 66px;
+  margin-bottom: 30px;
+
+  color: aliceblue;
+  text-align: center;
+  margin: 0;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+h2{
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
+  color: aliceblue;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+h3{
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  color: aliceblue;
+  animation: 1s ease-out 0s 1 slideInLeft;
+
+}
+
+hr{
+  color: #fff;
+  margin: 2.5vw;
+  height: 2px;
+  width: 95%;
+}

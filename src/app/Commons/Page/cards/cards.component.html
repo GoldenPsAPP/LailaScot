@@ -1,0 +1,32 @@
+<div class="row d-flex justify-content-center row-card-principal">
+  <h1>Don't you want to know more about me?</h1>
+  <div class="col-md-10"><h2>Come and explore my sexiest side with me, let's play for a while and live a hot adventure together</h2></div>
+  <div  *ngFor="let Card of Cards; index as i;"  class="col-md-3 row-card">
+    <a href="{{Card.url}}" target="_blank" rel="noopener noreferrer">
+      <div>
+        <div
+          class="card text-white card-has-bg click-col"
+          [style.background-image]="'url('+Card.bg+')'"
+        >
+          <div class="card-img-overlay d-flex flex-column">
+            <div class="card-body">
+              <small class="card-meta col-mb-2"></small>
+              <h4 class="card-title mt-0">
+                <a class="text-white" herf="#"></a>
+              </h4>
+              <small><i class="far fa-clock"></i> </small>
+            </div>
+            <div class="card-footer">
+              <div class="media">
+                <div class="media-body">
+                  <h3 class="my-0 text-white d-block">{{Card.title}}</h3>
+                  <h4>{{Card.subtitle}}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></a
+    >
+  </div>
+</div>

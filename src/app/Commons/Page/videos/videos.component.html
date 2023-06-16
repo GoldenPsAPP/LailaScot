@@ -1,0 +1,10 @@
+<div class="row d-flex justify-content-center row-principal">
+  <h1>Mis Videos</h1>
+  <hr>
+  <div class="div-video col-md-3 d-flex justify-content-center  align-items-center" *ngFor="let videosArray of videosArray; index as i;">
+  <video controls>
+    <source src={{videosArray.url}} type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+  </div>
+  </div>
